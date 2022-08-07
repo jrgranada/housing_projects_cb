@@ -7,7 +7,7 @@
   
 <a name="descripcion"></a>
 ## Descripción
-Proyecto Spring Boot con Autorización OAuth2 (Code flow) y capa de identificación con OpenID, la finalidad del backend es exponer dos endpoints que retornan los proyectos de vivienda que se encuentran disponibles en la constructora, teniendo en cuenta que existen dos tipos de proyectos (de acceso público y de acceso restringido), los proyectos de acceso público pueden ser consultados por cualquier sistema, por otro lado están los proyectos de vivienda con acceso restringidos que solo podrán ser accedidos mediante una autorización emitida por Google después de una autenticación en los sistemas de ellos. 
+Proyecto Spring Boot con Autorización OAuth2 (Code flow) y capa de identificación con OpenID, la finalidad del backend es exponer dos endpoints que retornan los proyectos de vivienda que se encuentran disponibles en la constructora, teniendo en cuenta que existen dos tipos de proyectos (de acceso público y de acceso restringido), los proyectos de acceso público pueden ser consultados por cualquier sistema, por otro lado están los proyectos de vivienda con acceso restringido que solo podrán ser accedidos mediante una autorización emitida por Google después de una autenticación en los sistemas de ellos. 
 
 ### Software utilizado:
 
@@ -22,6 +22,8 @@ Proyecto Spring Boot con Autorización OAuth2 (Code flow) y capa de identificaci
 ## Alcance
 
 Desarrollo de dos endpoints, uno de ellos de acceso público y el otro requiere autorización OAuth2 para ser  consultado, se implementó la capa de autenticación con OpenID.
+
+El endpoint de acceso restringido retorna el fullname y el email del usuario que se usó para autenticación en Goolgle.
 
 El backend se expone en el puerto 8080 y phpMyAdmin en el puerto 8081.
 
