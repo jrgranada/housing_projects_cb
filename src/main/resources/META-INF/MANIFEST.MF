@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.practice.oauth2openidproject.Oauth2OpenidProjectApplicat
+ ion
+
